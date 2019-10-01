@@ -1,307 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Oswald Display</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400" rel="stylesheet">
-    <title>Women at the Edge of Technology</title>
+  <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
-  <!-- This sets the initial view for mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style type="text/css" media="screen">
-      
-    html {
-      /* Make iOS not resize on device rotation */
-      -ms-text-size-adjust: 100%; 
-      -webkit-text-size-adjust: 100%;
-
-      /* NOTE
-      html is set to 62.5% so that all the REM measurements throughout Skeleton
-      are based on 10px sizing. So basically 1.5rem = 15px  
-      
-      Change this if you want to base your REM measuements on something other 
-      than 10px as the base
-      */
-      font-size: 62.5%; 
-    }
-      
-    body {
-      font-size: 1.7rem; /* currently ems cause chrome bug misinterpreting rems on body element */
-
-      margin-left: 30px;
-      margin-right: 10px; 
-      font-family: 'Assistant', sans-serif;
-
-    }
-
-    p {
-      margin-top: 1rem;
-      text-align: left;
-      font-weight: 300;
-
-      letter-spacing: 0.1px; 
-      line-height: 1.7em;
-      -webkit-hyphens: auto;
-      margin-right: 40px;
-      }
-      
-    p.first {
-      margin-top:0;
-    }
-
-    h4 {
-      margin-bottom: 2rem;
-      font-size: 7rem;
-      line-height: 1.35;     }
-
-    h4.title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: 2px;
-        margin-right: 40px;
-    }
-
-    h4.author {
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 300;
-      margin-bottom: 0px;
+  <!-- import the webpage's javascript file -->
+    <script src="js/script.js" defer></script>
     
-   }
-
-    .wrapper {
-      display:flex;
-    }
-
-    .column {
-      width: 300px; /* Set your column width here */
-      margin: auto;
-    }
-      
-      .pull-quote{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-size: 1em;
-        font-weight: 300;
-        font-style: oblique;
-        line-height: 1.3;
-        letter-spacing: 0.5px;
-      }
-
-    /* Larger than mobile */
-    @media (min-width: 300px) { 	    
-        .column {
-            width: 80rem; /* Set your column width here */
-            margin: auto;
-            margin-left: 15px;
-            margin-right: 30px;
-
-	    }
-        
-		p {
-			margin-top: 1rem;
-            font-size: 2rem;
-            
-        }
-        
-        h4.title{
-            font-size: 5.5rem;
-            line-height: 5.8rem;
-            -webkit-hyphens: auto;
-        }
-        
-        .pull-quote{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            font-size: 4rem;
-            font-weight: 300;
-            font-style: oblique;
-            line-height: 1.3;
-            letter-spacing: 0.5px;
-      }
-      }
-
-      
-      
-      
-    /* Larger than phablet (also point when grid becomes active) */
-    @media (min-width: 450px) {
-        .column {
-            width: 80rem;
-        }
-        
-        p {
-            font-size:1.3rem;
-            line-height:1.9rem;
-            text-align:left;  
-        }
-        
-        h4.title {
-          padding-top:5rem;
-        }
-        
-        h4.author {
-          margin-bottom: 4rem;
-        }
-      }
-
-      
-      
-      
-    /* Larger than tablet */
-    @media (min-width: 750px) {        
-        .column {
-          width: 80rem;
-            margin: auto;
-            margin-left: 50px;
-            margin-right: 200px;
-        }
-        
-    h4.title {
-        font-size: 8rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.1;
-        letter-spacing: 2px;
-        hyphens: auto;
-        margin-right: 100px;
-    }
-
-        
-    h4.author {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 300;
-        margin-bottom: 20px;
-      }
-        
-    p {
-        font-size:2rem;
-        line-height: 3.3rem;
-        hyphens: auto;
-        font-weight: 300;
-        }
-      }
-
-      
-      
-      
-      
-    /* Larger than desktop */
-    @media (min-width: 1000px) {
-        
-    .column {
-          width: 80rem;
-            margin: auto;
-            margin-left: 50px;
-            margin-right: 200px;
-        }
-        
-    h4.title {
-        font-size: 8rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.1;
-        letter-spacing: 2px;
-        hyphens: auto;
-        margin-right: 100px;
-    }
-
-        
-    h4.author {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 300;
-        margin-bottom: 20px;
-      }
-        
-    p {
-        font-size:2rem;
-        line-height: 3.3rem;
-        hyphens: auto;
-        font-weight: 300;
-        }
-      }
-      }
-
-    /* Larger than Desktop HD */
-    @media (min-width: 1200px) {	    
-        .column {
-            width: 150rem;
-            margin-left: 50px;
-            margin-right: 200px;
-        }
-        
-    h4.title {
-        font-size: 8rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.1;
-        letter-spacing: 2px;
-        hyphens: auto;
-        margin-right: 100px;
-    }
-
-        
-    h4.author {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 300;
-        margin-bottom: 20px;
-      }
-        
-    p {
-        font-size:2rem;
-        line-height: 3.3rem;
-        hyphens: auto;
-        font-weight: 300;
-        }
-      }
-    
-  </style>
 </head>
+  
 <body>
-
-  <div class="wrapper">
-    <div class="column">
-
-        <h4 class="title">Women at the Edge of Technology</h4>
-
-        <br>
-        <br>
-        <br>
-        
-         <h4 class="author">Elizabeth Resnick</h4>
-        
-        <br>
-        <p>There are many women designers who deserve to be recognised for their immense contributions to the field of graphic design, but few so deserving as Jacqueline Casey (1927-92). A 1949 graduate of the Massachusetts College of Art [now known as Massachusetts College of Art and Design], Casey joined the Office of Publications (Design Services Office) at the Massachusetts Institute of Technology (MIT) in 1955, under design director and fellow alumna Muriel Cooper.When Cooper left to join the MIT faculty in 1972, Casey took over as director of the Office of Publications, where she created a series of iconic posters to publicise MIT events and exhibitions along with fellow designers Ralph Coburn and Dietmar Winkler. She was a woman in a man’s world, not only in the publications office, but also in the MIT community that served as her clientele. Casey’s visual language style was strongly influenced by the Swiss designers Karl Gerstner, Armin Hofmann and Josef Müller-Brockmann and the International Style. Thérèse Moll, a young Swiss designer who had been an assistant in Karl Gerstner’s Basel office and who briefly worked in the MIT publications office in 1958, is the one person Casey credited with her introduction to the grid and its design philosophy: ‘She introduced the office to European typography … This use of proportions in designing publications series became a useful tool for developing MIT’s image.’ Typography plays a fundamental role in Casey’s posters: a complete visual image can be created entirely from the message content and the image becomes the message. ‘My job is to stop anyone I can with an arresting or puzzling image, and entice the viewer to read the message in small type and above all to attend the exhibition,’ she told Liz McQuiston in Women In Design (Trefoil, 1988).</p>
-
-        <p>In each of Casey’s posters, a visual element attracts the viewer and the text provides information. She is at her best when she employs a visual metaphor, as she does so brilliantly with the use of a ‘blood splat’ as the solitary image for her exhibition poster ‘Goya: The Disasters of War’, where the interplay of visual and verbal ignites our imagination and encourages a more profound understanding of its subject.</p>
-
-        <p>In another astonishing visual statement for a poster announcing the exhibition ‘Intimate Architecture: Contemporary Clothing Design’, Casey, working with Robert Mapplethorpe images, places the typography without interfering with the striking photograph. Her concept incorporated the text by gently following the folds of the dress in a manner that achieved seamless integration between type and image.</p>
-        
-        <p class="pull-quote">"...in a manner that achieved seamless integration between type and image."</p>
-
-        <p>Casey was also known for her word play and inventiveness while using the highly ‘rational’ Swiss design methodology. ‘Russia, USA Peace, 1985’ is a poster commissioned by the Shoshin Society (also known as the Hiroshima Appeals peace campaign) to commemorate the 40th anniversary of the bombing of Hiroshima.</p>
-
-        <p>Using a predominantly black poster with a clear varnished image of the planet Earth in the upper right-hand corner, Casey discovers the word USA nestled within the word ‘Russia’ and uses colour (red and white) to separate the two superpowers, visually suggesting that they were inextricably linked in their quest for peace.</p>
-
-        <p>MIT is renowned for teaching and research in science and technology. Casey’s work for its academic community engaged the intellect of her audience by its ability to identify and reveal the ‘essence’ of each subject in a profound yet human form.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="jGravity.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  
+  
+<div id="cursor"></div>
+  <div class="header">
+    <a href="file:///Users/laurenfox/Desktop/typeface/typeface-homepage/index.html
+" id="specimen">Oswald Display</a>
+    <a href="file:///Users/laurenfox/Desktop/typeface/typeface-about/index.html" id="info">Learn More</a>
   </div>
+	    
 
+  
+<!-- Content container  -->
+  
+<div class="container">
+	  <div class="inner-container">
+    
+    
+		<!-- A -->
+		<div class="lettercontainer" id="a">
+			  <div class="a-trapezoid-bottom-left trapezoid-bottom"></div>
+              <div class="a-circle-bottom-left"></div>
+			  <div class="a-pill-top"></div>
+			  <div class="a-vertical-left line"></div>
+			  <div class="a-horizontal horizontal"></div>
+			  <div class="a-horizontal horizontal" id="a-dotted"></div>
+			  <div class="a-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="a-vertical-right line"></div>
+			  <div class="a-trapezoid-top trapezoid-top"></div>
+			  <div class="a-rectangle-bottom-right"></div>
+			  <div class="a-circle-2"></div>
+        <div class="a-circle-3"></div>
+		</div>
+    
+    
+		<!-- B -->
+		<div class="lettercontainer" id="b">
+			  <div class="b-rectangle"></div>
+			  <div class="b-circle-1"></div>
+        <div class="b-circle-2"></div>
+			  <div class="b-vertical-left line"></div>
+			  <div class="b-vertical-right-top line"></div>
+			  <div class="b-vertical-right-top-2"></div>
+			  <div class="b-vertical-right-bottom line"></div>
+			  <div class="b-horizontal-top horizontal"></div>
+			  <div class="b-horizontal-bottom horizontal"></div>
+			  <div class="b-horizontal-center horizontal"></div>
+			  <div class="b-trapezoid-bottom-left trapezoid-bottom"></div>
 
+			  <div class="b-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!-- C -->
+		<div class="lettercontainer no-hover" id="c">
+			  <div class="c-circle-1"></div>
+        <div class="c-circle-2"></div>
+        <div class="c-circle-3"></div>
+        <div class="c-circle-4"></div>
+			  <div class="c-vertical-left line"></div>
+		  	<div class="c-vertical-right-top line"></div>
+		  	<div class="c-vertical-right-bottom line"></div>
+			  <div class="c-horizontal-top horizontal"></div>
+			  <div class="c-horizontal-bottom horizontal"></div>
+			  <div class="c-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="c-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!--  D  -->
+		<div class="lettercontainer no-hover" id="d">
+		  	<div class="d-circle-left"></div>
+			  <div class="d-vertical-left line"></div>
+	      <div class="d-vertical-right line"></div>
+			  <div class="d-horizontal-top horizontal"></div>
+			  <div class="d-horizontal-bottom horizontal"></div>
+			  <div class="d-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="d-trapezoid-top-left trapezoid-top"></div>
+			  <div class="d-rectangle"></div>
+			  <div class="d-angle-top line"></div>
+		  	<div class="d-angle-bottom line"></div>
+		</div>
+    
+    
+		<!-- E -->
+		<div class="lettercontainer no-hover" id="e">
+			  <div class="e-vertical-left line"></div>
+			  <div class="e-vertical-right-top line"></div>
+			  <div class="e-vertical-right-bottom line"></div>
+			  <div class="e-vertical-center line"></div>
+			  <div class="e-horizontal-top horizontal"></div>
+			  <div class="e-horizontal-center horizontal"></div>
+			  <div class="e-horizontal-bottom horizontal"></div>
+			  <div class="e-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="e-trapezoid-top-left trapezoid-top"></div>
+			  <div class="e-circle-1"></div>
+        <div class="e-circle-2"></div>
+		</div>
+    
+    
+		<!-- F -->
+		<div class="lettercontainer no-hover" id="f">
+			  <div class="f-vertical-left line"></div>
+			  <div class="f-vertical-right-top line"></div>
+			  <div class="f-vertical-center line"></div>
+			  <div class="f-horizontal-top horizontal"></div>
+			  <div class="f-horizontal-center horizontal"></div>
+			  <div class="f-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="f-trapezoid-top-left trapezoid-top"></div>
+        <div class="f-circle"></div>
+			  <div class="f-rectangle"></div>
+		</div>
+    
+    
+		<!-- G -->
+		<div class="lettercontainer no-hover" id="g">
+			  <div class="g-vertical-left line"></div>
+			  <div class="g-vertical-right-top line"></div>
+			  <div class="g-vertical-right-bottom line"></div>
+			  <div class="g-horizontal-top horizontal"></div>
+			  <div class="g-horizontal-center horizontal"></div>
+		  	<div class="g-horizontal-bottom horizontal"></div>
+			  <div class="g-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="g-trapezoid-top-left trapezoid-top"></div>
+			  <div class="g-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="g-circle"></div>
+			  <div class="g-rectangle"></div>
+		</div>
+    
+    
+		<!-- H -->
+		<div class="lettercontainer no-hover" id="h">
+			  <div class="h-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="h-vertical-left line"></div>
+			  <div class="h-trapezoid-top-left trapezoid-top"></div>
+			  <div class="h-horizontal horizontal"></div>
+			  <div class="h-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="h-vertical-right line"></div>
+			  <div class="h-trapezoid-top-right trapezoid-top"></div>
+			  <div class="h-rectangle"></div>
+			  <div class="h-circle"></div>
+			  <div class="h-trapezoid-2"></div>
+			  <div class="h-trapezoid-3"></div>
+		</div>
+    
+    
+		<!-- I -->
+		<div class="lettercontainer" id="i">
+		  	<div class="i-vertical-left line"></div>
+			  <div class="i-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="i-trapezoid-top-left trapezoid-top"></div>
+			  <div class="i-circle"></div>
+			  <div class="i-circle-1"></div>
+			  <div class="i-circle-2"></div>
+			  <div class="i-circle-3"></div>
+			  <div class="i-circle-4"></div>
+		    <div class="i-circle-5"></div>
+		    <div class="i-circle-6"></div>
+			  <div class="i-circle-7"></div>
+		</div>
+    
+    
+		<!-- J -->
+		<div class="lettercontainer" id="j">
+			  <div class="j-vertical-left line"></div>
+			  <div class="j-vertical-right line"></div>
+			  <div class="j-horizontal-bottom horizontal"></div>
+			  <div class="j-trapezoid-bottom-left trapezoid-top"></div>
+			  <div class="j-trapezoid-bottom-right trapezoid-bottom"></div>
+		  	<div class="j-trapezoid-top-right trapezoid-top"></div>
+			  <div class="j-rectangle"></div>
+		    <div class="j-circle"></div>
+		</div>
+    
+    
+		<!--  K -->
+		<div class="lettercontainer" id="k">
+			  <div class="k-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="k-vertical-left line"></div>
+			  <div class="k-angle-top line"></div>
+			  <div class="k-angle-bottom line"></div>
+			  <div class="k-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="k-trapezoid-top-left trapezoid-top"></div>
+			  <div class="k-trapezoid-top-right trapezoid-top"></div>
+			  <div class="k-circle"></div>
+			  <div class="k-circle-2"></div>
+		</div>
+    
+    
+		<!--  L -->
+		<div class="lettercontainer no-hover" id="l">
+			  <div class="l-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="l-vertical-left line"></div>
+			  <div class="l-circle"></div>
+			  <div class="l-circle-left"></div>
+			  <div class="l-rectangle-left"></div>
+			  <div class="l-vertical-bottom-right line"></div>
+			  <div class="l-horizontal-bottom horizontal"></div>
+			  <div class="l-trapezoid-top-left trapezoid-top"></div>
+			  <div class="l-trapezoid-bottom-right trapezoid-bottom"></div>
+		</div>
+    
+  
+		<!-- M  -->
+		<div class="lettercontainer" id="m">
+			  <div class="m-rectangle-left"></div>
+			  <div class="m-rectangle-right"></div>
+			  <div class="m-circle-right"></div>
+			  <div class="m-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="m-vertical-left line"></div>
+			  <div class="m-angle-left line"></div>
+			  <div class="m-angle-right line"></div>
+			  <div class="m-vertical-right line"></div>
+			  <div class="m-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="m-trapezoid-top-left trapezoid-top"></div>
+			  <div class="m-trapezoid-top-right trapezoid-top"></div>
+			  <div class="m-trapezoid-bottom-center trapezoid-bottom"></div>
+		</div>
+    
+    
+		<!-- N -->
+		<div class="lettercontainer" id="n">
+			  <div class="n-vertical-left line"></div>
+			  <div class="n-vertical-right line"></div>
+			  <div class="n-trapezoid-top-left trapezoid-top"></div>
+			  <div class="n-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="n-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="n-trapezoid-top-right trapezoid-top"></div>
+		  	<div class="n-angle line"></div>
+			  <div class="n-circle"></div>
+			  <div class="n-rectangle-left"></div>
+		</div>
+    
+    
+		<!--  O -->
+		<div class="lettercontainer" id="o">
+			  <div class="o-vertical-left line"></div>
+			  <div class="o-circle"></div>
+			  <div class="o-circle-1"></div>
+        <div class="o-circle-2"></div>
+			  <div class="o-rectangle"></div>
+			  <div class="o-vertical-right line"></div>
+			  <div class="o-trapezoid-top-left trapezoid-top"></div>
+			  <div class="o-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="o-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="o-trapezoid-top-right trapezoid-top"></div>
+			  <div class="o-horizontal-top horizontal"></div>
+			  <div class="o-horizontal-bottom horizontal"></div>
+		</div>
+    
+    
+		<!-- P -->
+		<div class="lettercontainer" id="p">
+        <div class="p-rectangle"></div>
+        <div class="p-circle"></div>
+			  <div class="p-vertical-left line"></div>
+			  <div class="p-vertical-right-top line"></div>
+			  <div class="p-horizontal-top horizontal"></div>
+			  <div class="p-horizontal-center horizontal"></div>
+			  <div class="p-trapezoid-bottom-left trapezoid-bottom"></div>
+		  	<div class="p-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!-- Q -->
+		<div class="lettercontainer" id="q">
+			  <div class="q-vertical-left line"></div>
+		  	<div class="q-vertical-right line"></div>
+			  <div class="q-horizontal-top horizontal"></div>
+			  <div class="q-horizontal-bottom horizontal"></div>
+			  <div class="q-angle-bottom-right line"></div>
+			  <div class="q-angle-bottom-left line"></div>
+			  <div class="q-angle-top-right line"></div>
+			  <div class="q-angle-top-left line"></div>
+			  <div class="q-angle line"></div>
+			  <div class="q-trapezoid-bottom trapezoid-bottom"></div>
+        <div class="q-trapezoid-bottom-2 trapezoid-bottom"></div>
+		</div>
+    
+    
+		<!-- R -->
+		<div class="lettercontainer" id="r">
+			  <div class="r-vertical-left line"></div>
+			  <div class="r-vertical-right-top line"></div>
+			  <div class="r-vertical-right-bottom line"></div>
+			  <div class="r-horizontal-top horizontal"></div>
+		  	<div class="r-horizontal-center horizontal"></div>
+		  	<div class="r-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="r-trapezoid-top-left trapezoid-top"></div>
+			  <div class="r-trapezoid-bottom-right trapezoid-bottom"></div>
+        <div class="r-rectangle-right-bottom"></div>
+        <div class="r-circle-left-top"></div>
+        <div class="r-circle-right-bottom"></div>
+		</div>
+    
+    
+		<!-- S -->
+		<div class="lettercontainer" id="s">
+			  <div class="s-vertical-left line"></div>
+			  <div class="s-vertical-right line"></div>
+			  <div class="s-vertical-top-right line"></div>
+		  	<div class="s-vertical-bottom-right line"></div>
+			  <div class="s-trapezoid-top-left trapezoid-top"></div>
+			  <div class="s-vertical-bottom-left line"></div>
+			  <div class="s-horizontal-top horizontal"></div>
+			  <div class="s-horizontal-center horizontal"></div>
+			  <div class="s-horizontal-bottom horizontal"></div>
+			  <div class="s-trapezoid-bottom-right trapezoid-bottom"></div>
+        <div class="s-circle-right-bottom"></div>
+        <div class="s-circle-right-bottom-2"></div>
+        <div class="s-circle-right-bottom-3"></div>
+		</div>
+    
+    
+		<!-- T -->
+		<div class="lettercontainer" id="t">
+			  <div class="t-vertical-left line"></div>
+			  <div class="t-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="t-horizontal-top-left horizontal"></div>
+			  <div class="t-horizontal-top-right horizontal"></div>
+			  <div class="t-vertical-top-left line"></div>
+			  <div class="t-vertical-top-right line"></div>
+        <div class="t-circle-1"></div>
+			  <div class="t-circle-2"></div>
+			  <div class="t-circle-3"></div>
+			  <div class="t-circle-4"></div>
+		    <div class="t-circle-5"></div>
+		</div>
+    
+    
+		<!-- U -->
+		<div class="lettercontainer" id="u">
+			  <div class="u-vertical-left line"></div>
+			  <div class="u-vertical-right line"></div>
+			  <div class="u-trapezoid-top-left trapezoid-top"></div>
+			  <div class="u-angle-right line"></div>
+			  <div class="u-angle-left line"></div>
+			  <div class="u-trapezoid-top-right trapezoid-top"></div>
+			  <div class="u-horizontal horizontal"></div>
+        <div class="u-rectangle-left"></div>
+        <div class="u-rectangle-right"></div>
+        <div class="u-circle-left"></div>
+		</div>
+    
+    
+		<!-- V -->
+		<div class="lettercontainer" id="v">
+			  <div class="v-angle-left line"></div>
+		    <div class="v-angle-right line"></div>
+			  <div class="v-trapezoid-top-left trapezoid-top"></div>
+			  <div class="v-trapezoid-top-right trapezoid-top"></div>
+			  <div class="v-trapezoid-bottom trapezoid-bottom"></div>
+        <div class="v-rectangle"></div>
+        <div class="v-circle"></div>
+		</div>
+    
+    
+		<!-- W -->
+		<div class="lettercontainer" id="w">
+			  <div class="w-angle-left line"></div>
+			  <div class="w-angle-right line"></div>
+			  <div class="w-trapezoid-top-left trapezoid-top"></div>
+			  <div class="w-trapezoid-top-right trapezoid-top"></div>
+			  <div class="w-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="w-angle-left-2 line"></div>
+			  <div class="w-angle-right-2 line"></div>
+			  <div class="w-trapezoid-top-right-2 trapezoid-top"></div>
+			  <div class="w-trapezoid-bottom-2 trapezoid-bottom"></div>
+        <div class="w-rectangle-left"></div>
+        <div class="w-rectangle-center"></div>
+        <div class="w-rectangle-right"></div>
+		</div>
+    
+    
+		<!-- X -->
+		<div class="lettercontainer" id="x">
+			  <div class="x-angle-left-top line"></div>
+			  <div class="x-angle-right-bottom line"></div>
+			  <div class="x-angle-right-top line"></div>
+			  <div class="x-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="x-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="x-trapezoid-top-left trapezoid-top"></div>
+			  <div class="x-trapezoid-top-right trapezoid-top"></div>
+        <div class="x-rectangle-right-bottom"></div>
+		</div>
+    
+    
+		<!-- Y -->
+		<div class="lettercontainer" id="y">
+			  <div class="y-angle-left-top line"></div>
+			  <div class="y-angle-right-top line"></div>
+			  <div class="y-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="y-vertical line"></div>
+			  <div class="y-trapezoid-top-left trapezoid-top"></div>
+			  <div class="y-trapezoid-top-right trapezoid-top"></div>
+        <div class="y-circle-1"></div>
+        <div class="y-circle-2"></div>
+        <div class="y-circle-3"></div>
+		</div>
+    
+    
+		<!-- Z -->
+		<div class="lettercontainer" id="z">
+        <div class="z-rectangle-1"></div>
+        <div class="z-rectangle-2"></div>
+			  <div class="z-angle line"></div>
+			  <div class="z-trapezoid-top trapezoid-top"></div>
+			  <div class="z-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="z-horizontal-top horizontal"></div>
+		    <div class="z-horizontal-bottom horizontal"></div>
+			  <div class="z-vertical-top line "></div>
+        <div class="z-vertical-bottom line "></div>
+		</div> 
+    
+  </div>
+  
+</div>
+  
 </body>
 </html>
