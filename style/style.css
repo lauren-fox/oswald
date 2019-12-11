@@ -5,6 +5,10 @@ body {
   height: 100vh;
 }
 
+html{
+cursor: none;
+}
+
 h1 {
   font-style: ;
   color: #1A60FB;
