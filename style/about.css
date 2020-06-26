@@ -1,13 +1,13 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  background-color: #FFFCF1;
+  background-color: aliceblue;
   height: 100vh;
   overflow: hidden;
   cursor: none;
 }
 
 h1 {
-  color: #1A60FB;
+  color: mediumseagreen;
   font-size: 1rem;
   font-family: "arial";
   z-index:99;
@@ -22,7 +22,7 @@ h1 {
 
 
 a{
-  color: #1A60FB;
+  color: mediumseagreen;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   cursor: none;
@@ -34,7 +34,7 @@ a:hover{
 }
 
 p{
-  color: #1A60FB;
+  color: mediumseagreen;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   line-height: 1.42rem;
@@ -43,14 +43,14 @@ p{
 #text{
   width: 45vw;
   margin-left: 50vw;
-  margin-top: -4vh;
+  margin-top: -3vh;
 }
 
 
 /* CLASSES FOR LETTER MODULES */
 
 .trapezoid-top{
-  border-top: 200px solid #1A60FB;
+  border-top: 200px solid mediumseagreen;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   height: 0;
@@ -59,7 +59,7 @@ p{
 }
 .trapezoid-bottom{
   position: absolute;
-  border-bottom: 200px solid #1A60FB;
+  border-bottom: 200px solid mediumseagreen;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   height: 0;
@@ -72,7 +72,7 @@ p{
   pointer-events: none;
   width: 20px;
   height:20px;
-  background-color: #ddca5f;
+  background-color: tomato;
   border-radius: 100%;
   position: absolute;
   top:0;
@@ -97,7 +97,7 @@ p{
   position: absolute;
   width: 500px;
   height: 250px;
-  background-color:#1A60FB;
+  background-color:mediumseagreen;
   padding: 5px;
   z-index: -1;
 }
@@ -109,7 +109,7 @@ p{
   width: 350px;
   height: 350px;
   border-radius: 100%;
-  background-color:#1A60FB;
+  background-color:mediumseagreen;
 }
 
 
