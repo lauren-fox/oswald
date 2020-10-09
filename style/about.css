@@ -20,7 +20,12 @@ a{
   text-decoration: none;
 }
 
-
+#header{
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 10px;
+}
 
 
 #body-copy{
@@ -30,9 +35,12 @@ a{
   font-family: "Helvetica";
   width: 40vw;
   margin-left: 20px;
-  margin-top: -30px;
+  margin-top: 80px;
 }
 
+#body-copy:hover{
+  z-index: 10000000000;
+}
 
 #info:hover{
   border-radius: 0px;
