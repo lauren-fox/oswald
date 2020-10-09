@@ -38,7 +38,7 @@ a{
   margin-top: 80px;
 }
 
-#body-copy:hover{
+p:hover{
   z-index: 10000000000;
 }
 
@@ -129,9 +129,9 @@ a{
 /* CLASSES FOR LETTER MODULES */
 
 .trapezoid-top{
-  border-top: 35vh solid #14ad2d;
-  border-left: 25vh solid transparent;
-  border-right: 25vh solid transparent;
+  border-top: 30vh solid #14ad2d;
+  border-left: 20vh solid transparent;
+  border-right: 20vh solid transparent;
   height: 0;
   width: 200px;
   position: absolute;
@@ -151,7 +151,6 @@ a{
   pointer-events: none;
   width: 20px;
   height:20px;
-  background-color: #ff1038;
   border-radius: 100%;
   position: absolute;
   top:0;
@@ -171,19 +170,20 @@ a{
 
 .a-rectangle-bottom-right{
   position: absolute;
-  width: 70vh;
-  height: 36vh;
+  width: 63vh;
+  height: 34vh;
   background-color:#ffcad5;
   padding: 5px;
-  z-index: -1;
+  z-index: -100;
 }
 
 .a-circle-bottom-left{
   position: absolute;
   top: 272px;
   left: -34px;
-  width: 50vh;
-  height: 50vh;
+  width: 45vh;
+  height: 45vh;
   border-radius: 100%;
   background-color:#ffd62c;
+  z-index: -100;
 }
