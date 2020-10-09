@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-$('body').jGravity({
+$('div').jGravity({
   target:'div',
   ignoreClass: 'ignore'
 });
