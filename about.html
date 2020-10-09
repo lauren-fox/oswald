@@ -1,44 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Oswald</title>
+    <title>Oswald Display</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <a href="specimen.html" id="specimen">Specimen</a>
-	<a href="about.html" id="info">Learn More</a>
-	<a href="index.html" id="title">Oswald</a>
-
   <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/specimen.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
+
   <!-- import the webpage's javascript file -->
-    <script src="js/about.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
   
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="scripts/jGravity.js"></script>
+    <script src="jGravity.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   
   
 <div id="cursor"></div>
-  
-<div id="copy-container">
-<div id="body-copy">Oswald is a modular typeface designed and built by Lauren Fox using HTML, CSS and JavaScript. Oswald is an interaction typeface so play around to see the letterforms transform. This project was completed in September 2019 in Form and Interaction at Washington University in St. Louis. Completed with help and motivation from Jonathan Hanahan and Christine Stravridis. The body copy is set in IBM Plex Mono designed by Mike Abbink at IBM.</div>
+<div id="header-container">
+    <a href="specimen.html" id="specimen">Specimen</a>
+	<a href="about.html" id="info">Learn More</a>
+	<a href="index.html" id="header">Oswald</a>
 </div>
-
-<div class="inner-container">
-		<!-- A -->
+<!-- Content container  -->
+  
+<div class="container">
+	  <div class="inner-container">
+    
+    
+	<!-- A -->
 		<div class="lettercontainer" id="a">
 			  <div class="a-trapezoid-bottom-left trapezoid-bottom"></div>
         <div class="a-circle-bottom-left"></div>
+			  <div class="a-pill-top"></div>
+			  <div class="a-vertical-left line"></div>
+			  <div class="a-horizontal horizontal"></div>
+			  <div class="a-horizontal horizontal" id="a-dotted"></div>
 			  <div class="a-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="a-vertical-right line"></div>
 			  <div class="a-trapezoid-top trapezoid-top"></div>
 			  <div class="a-rectangle-bottom-right"></div>
-    </div>
+			  <div class="a-circle-2"></div>
+        <div class="a-circle-3"></div>
+		</div>
+    
+    
+		<!-- B -->
+		<div class="lettercontainer" id="b">
+			  <div class="b-rectangle"></div>
+			  <div class="b-circle-1"></div>
+        <div class="b-circle-2"></div>
+			  <div class="b-vertical-left line"></div>
+			  <div class="b-vertical-right-top line"></div>
+			  <div class="b-vertical-right-top-2"></div>
+			  <div class="b-vertical-right-bottom line"></div>
+			  <div class="b-horizontal-top horizontal"></div>
+			  <div class="b-horizontal-bottom horizontal"></div>
+			  <div class="b-horizontal-center horizontal"></div>
+			  <div class="b-trapezoid-bottom-left trapezoid-bottom"></div>
+
+			  <div class="b-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!-- C -->
+		<div class="lettercontainer no-hover" id="c">
+			  <div class="c-circle-1"></div>
+        <div class="c-circle-2"></div>
+        <div class="c-circle-3"></div>
+        <div class="c-circle-4"></div>
+			  <div class="c-vertical-left line"></div>
+		  	<div class="c-vertical-right-top line"></div>
+		  	<div class="c-vertical-right-bottom line"></div>
+			  <div class="c-horizontal-top horizontal"></div>
+			  <div class="c-horizontal-bottom horizontal"></div>
+			  <div class="c-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="c-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!--  D  -->
+		<div class="lettercontainer no-hover" id="d">
+		  	<div class="d-circle-left"></div>
+			  <div class="d-vertical-left line"></div>
+	      <div class="d-vertical-right line"></div>
+			  <div class="d-horizontal-top horizontal"></div>
+			  <div class="d-horizontal-bottom horizontal"></div>
+			  <div class="d-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="d-trapezoid-top-left trapezoid-top"></div>
+			  <div class="d-rectangle"></div>
+			  <div class="d-angle-top line"></div>
+		  	<div class="d-angle-bottom line"></div>
+		</div>
+    
+    
+		<!-- E -->
+		<div class="lettercontainer no-hover" id="e">
+			  <div class="e-vertical-left line"></div>
+			  <div class="e-vertical-right-top line"></div>
+			  <div class="e-vertical-right-bottom line"></div>
+			  <div class="e-vertical-center line"></div>
+			  <div class="e-horizontal-top horizontal"></div>
+			  <div class="e-horizontal-center horizontal"></div>
+			  <div class="e-horizontal-bottom horizontal"></div>
+			  <div class="e-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="e-trapezoid-top-left trapezoid-top"></div>
+			  <div class="e-circle-1"></div>
+        <div class="e-circle-2"></div>
+		</div>
+    
+    
+		<!-- F -->
+		<div class="lettercontainer no-hover" id="f">
+			  <div class="f-vertical-left line"></div>
+			  <div class="f-vertical-right-top line"></div>
+			  <div class="f-vertical-center line"></div>
+			  <div class="f-horizontal-top horizontal"></div>
+			  <div class="f-horizontal-center horizontal"></div>
+			  <div class="f-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="f-trapezoid-top-left trapezoid-top"></div>
+        <div class="f-circle"></div>
+			  <div class="f-rectangle"></div>
+		</div>
+    
+    
+		<!-- G -->
+		<div class="lettercontainer no-hover" id="g">
+			  <div class="g-vertical-left line"></div>
+			  <div class="g-vertical-right-top line"></div>
+			  <div class="g-vertical-right-bottom line"></div>
+			  <div class="g-horizontal-top horizontal"></div>
+			  <div class="g-horizontal-center horizontal"></div>
+		  	<div class="g-horizontal-bottom horizontal"></div>
+			  <div class="g-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="g-trapezoid-top-left trapezoid-top"></div>
+			  <div class="g-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="g-circle"></div>
+			  <div class="g-rectangle"></div>
+		</div>
+    
+    
+		<!-- H -->
+		<div class="lettercontainer no-hover" id="h">
+			  <div class="h-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="h-vertical-left line"></div>
+			  <div class="h-trapezoid-top-left trapezoid-top"></div>
+			  <div class="h-horizontal horizontal"></div>
+			  <div class="h-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="h-vertical-right line"></div>
+			  <div class="h-trapezoid-top-right trapezoid-top"></div>
+			  <div class="h-rectangle"></div>
+			  <div class="h-circle"></div>
+			  <div class="h-trapezoid-2"></div>
+			  <div class="h-trapezoid-3"></div>
+		</div>
+    
+    
+		<!-- I -->
+		<div class="lettercontainer" id="i">
+		  	<div class="i-vertical-left line"></div>
+			  <div class="i-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="i-trapezoid-top-left trapezoid-top"></div>
+			  <div class="i-circle"></div>
+			  <div class="i-circle-1"></div>
+			  <div class="i-circle-2"></div>
+			  <div class="i-circle-3"></div>
+			  <div class="i-circle-4"></div>
+		    <div class="i-circle-5"></div>
+		    <div class="i-circle-6"></div>
+			  <div class="i-circle-7"></div>
+		</div>
+    
+    
+		<!-- J -->
+		<div class="lettercontainer" id="j">
+			  <div class="j-vertical-left line"></div>
+			  <div class="j-vertical-right line"></div>
+			  <div class="j-horizontal-bottom horizontal"></div>
+			  <div class="j-trapezoid-bottom-left trapezoid-top"></div>
+			  <div class="j-trapezoid-bottom-right trapezoid-bottom"></div>
+		  	<div class="j-trapezoid-top-right trapezoid-top"></div>
+			  <div class="j-rectangle"></div>
+		    <div class="j-circle"></div>
+		</div>
+    
+    
+		<!--  K -->
+		<div class="lettercontainer" id="k">
+			  <div class="k-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="k-vertical-left line"></div>
+			  <div class="k-angle-top line"></div>
+			  <div class="k-angle-bottom line"></div>
+			  <div class="k-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="k-trapezoid-top-left trapezoid-top"></div>
+			  <div class="k-trapezoid-top-right trapezoid-top"></div>
+			  <div class="k-circle"></div>
+			  <div class="k-circle-2"></div>
+		</div>
+    
+    
+		<!--  L -->
+		<div class="lettercontainer no-hover" id="l">
+			  <div class="l-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="l-vertical-left line"></div>
+			  <div class="l-circle"></div>
+			  <div class="l-circle-left"></div>
+			  <div class="l-rectangle-left"></div>
+			  <div class="l-vertical-bottom-right line"></div>
+			  <div class="l-horizontal-bottom horizontal"></div>
+			  <div class="l-trapezoid-top-left trapezoid-top"></div>
+			  <div class="l-trapezoid-bottom-right trapezoid-bottom"></div>
+		</div>
+    
+  
+		<!-- M  -->
+		<div class="lettercontainer" id="m">
+			  <div class="m-rectangle-left"></div>
+			  <div class="m-rectangle-right"></div>
+			  <div class="m-circle-right"></div>
+			  <div class="m-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="m-vertical-left line"></div>
+			  <div class="m-angle-left line"></div>
+			  <div class="m-angle-right line"></div>
+			  <div class="m-vertical-right line"></div>
+			  <div class="m-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="m-trapezoid-top-left trapezoid-top"></div>
+			  <div class="m-trapezoid-top-right trapezoid-top"></div>
+			  <div class="m-trapezoid-bottom-center trapezoid-bottom"></div>
+		</div>
+    
+    
+		<!-- N -->
+		<div class="lettercontainer" id="n">
+			  <div class="n-vertical-left line"></div>
+			  <div class="n-vertical-right line"></div>
+			  <div class="n-trapezoid-top-left trapezoid-top"></div>
+			  <div class="n-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="n-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="n-trapezoid-top-right trapezoid-top"></div>
+		  	<div class="n-angle line"></div>
+			  <div class="n-circle"></div>
+			  <div class="n-rectangle-left"></div>
+		</div>
+    
+    
+		<!--  O -->
+		<div class="lettercontainer" id="o">
+			  <div class="o-vertical-left line"></div>
+			  <div class="o-circle"></div>
+			  <div class="o-circle-1"></div>
+        <div class="o-circle-2"></div>
+			  <div class="o-rectangle"></div>
+			  <div class="o-vertical-right line"></div>
+			  <div class="o-trapezoid-top-left trapezoid-top"></div>
+			  <div class="o-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="o-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="o-trapezoid-top-right trapezoid-top"></div>
+			  <div class="o-horizontal-top horizontal"></div>
+			  <div class="o-horizontal-bottom horizontal"></div>
+		</div>
+    
+    
+		<!-- P -->
+		<div class="lettercontainer" id="p">
+        <div class="p-rectangle"></div>
+        <div class="p-circle"></div>
+			  <div class="p-vertical-left line"></div>
+			  <div class="p-vertical-right-top line"></div>
+			  <div class="p-horizontal-top horizontal"></div>
+			  <div class="p-horizontal-center horizontal"></div>
+			  <div class="p-trapezoid-bottom-left trapezoid-bottom"></div>
+		  	<div class="p-trapezoid-top-left trapezoid-top"></div>
+		</div>
+    
+    
+		<!-- Q -->
+		<div class="lettercontainer" id="q">
+			  <div class="q-vertical-left line"></div>
+		  	<div class="q-vertical-right line"></div>
+			  <div class="q-horizontal-top horizontal"></div>
+			  <div class="q-horizontal-bottom horizontal"></div>
+			  <div class="q-angle-bottom-right line"></div>
+			  <div class="q-angle-bottom-left line"></div>
+			  <div class="q-angle-top-right line"></div>
+			  <div class="q-angle-top-left line"></div>
+			  <div class="q-angle line"></div>
+			  <div class="q-trapezoid-bottom trapezoid-bottom"></div>
+        <div class="q-trapezoid-bottom-2 trapezoid-bottom"></div>
+		</div>
+    
+    
+		<!-- R -->
+		<div class="lettercontainer" id="r">
+			  <div class="r-vertical-left line"></div>
+			  <div class="r-vertical-right-top line"></div>
+			  <div class="r-vertical-right-bottom line"></div>
+			  <div class="r-horizontal-top horizontal"></div>
+		  	<div class="r-horizontal-center horizontal"></div>
+		  	<div class="r-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="r-trapezoid-top-left trapezoid-top"></div>
+			  <div class="r-trapezoid-bottom-right trapezoid-bottom"></div>
+        <div class="r-rectangle-right-bottom"></div>
+        <div class="r-circle-left-top"></div>
+        <div class="r-circle-right-bottom"></div>
+		</div>
+    
+    
+		<!-- S -->
+		<div class="lettercontainer" id="s">
+			  <div class="s-vertical-left line"></div>
+			  <div class="s-vertical-right line"></div>
+			  <div class="s-vertical-top-right line"></div>
+		  	<div class="s-vertical-bottom-right line"></div>
+			  <div class="s-trapezoid-top-left trapezoid-top"></div>
+			  <div class="s-vertical-bottom-left line"></div>
+			  <div class="s-horizontal-top horizontal"></div>
+			  <div class="s-horizontal-center horizontal"></div>
+			  <div class="s-horizontal-bottom horizontal"></div>
+			  <div class="s-trapezoid-bottom-right trapezoid-bottom"></div>
+        <div class="s-circle-right-bottom"></div>
+        <div class="s-circle-right-bottom-2"></div>
+        <div class="s-circle-right-bottom-3"></div>
+		</div>
+    
+    
+		<!-- T -->
+		<div class="lettercontainer" id="t">
+			  <div class="t-vertical-left line"></div>
+			  <div class="t-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="t-horizontal-top-left horizontal"></div>
+			  <div class="t-horizontal-top-right horizontal"></div>
+			  <div class="t-vertical-top-left line"></div>
+			  <div class="t-vertical-top-right line"></div>
+        <div class="t-circle-1"></div>
+			  <div class="t-circle-2"></div>
+			  <div class="t-circle-3"></div>
+			  <div class="t-circle-4"></div>
+		    <div class="t-circle-5"></div>
+		</div>
+    
+    
+		<!-- U -->
+		<div class="lettercontainer" id="u">
+			  <div class="u-vertical-left line"></div>
+			  <div class="u-vertical-right line"></div>
+			  <div class="u-trapezoid-top-left trapezoid-top"></div>
+			  <div class="u-angle-right line"></div>
+			  <div class="u-angle-left line"></div>
+			  <div class="u-trapezoid-top-right trapezoid-top"></div>
+			  <div class="u-horizontal horizontal"></div>
+        <div class="u-rectangle-left"></div>
+        <div class="u-rectangle-right"></div>
+        <div class="u-circle-left"></div>
+		</div>
+    
+    
+		<!-- V -->
+		<div class="lettercontainer" id="v">
+			  <div class="v-angle-left line"></div>
+		    <div class="v-angle-right line"></div>
+			  <div class="v-trapezoid-top-left trapezoid-top"></div>
+			  <div class="v-trapezoid-top-right trapezoid-top"></div>
+			  <div class="v-trapezoid-bottom trapezoid-bottom"></div>
+        <div class="v-rectangle"></div>
+        <div class="v-circle"></div>
+		</div>
+    
+    
+		<!-- W -->
+		<div class="lettercontainer" id="w">
+			  <div class="w-angle-left line"></div>
+			  <div class="w-angle-right line"></div>
+			  <div class="w-trapezoid-top-left trapezoid-top"></div>
+			  <div class="w-trapezoid-top-right trapezoid-top"></div>
+			  <div class="w-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="w-angle-left-2 line"></div>
+			  <div class="w-angle-right-2 line"></div>
+			  <div class="w-trapezoid-top-right-2 trapezoid-top"></div>
+			  <div class="w-trapezoid-bottom-2 trapezoid-bottom"></div>
+        <div class="w-rectangle-left"></div>
+        <div class="w-rectangle-center"></div>
+        <div class="w-rectangle-right"></div>
+		</div>
+    
+    
+		<!-- X -->
+		<div class="lettercontainer" id="x">
+			  <div class="x-angle-left-top line"></div>
+			  <div class="x-angle-right-bottom line"></div>
+			  <div class="x-angle-right-top line"></div>
+			  <div class="x-trapezoid-bottom-left trapezoid-bottom"></div>
+			  <div class="x-trapezoid-bottom-right trapezoid-bottom"></div>
+			  <div class="x-trapezoid-top-left trapezoid-top"></div>
+			  <div class="x-trapezoid-top-right trapezoid-top"></div>
+        <div class="x-rectangle-right-bottom"></div>
+		</div>
+    
+    
+		<!-- Y -->
+		<div class="lettercontainer" id="y">
+			  <div class="y-angle-left-top line"></div>
+			  <div class="y-angle-right-top line"></div>
+			  <div class="y-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="y-vertical line"></div>
+			  <div class="y-trapezoid-top-left trapezoid-top"></div>
+			  <div class="y-trapezoid-top-right trapezoid-top"></div>
+        <div class="y-circle-1"></div>
+        <div class="y-circle-2"></div>
+        <div class="y-circle-3"></div>
+		</div>
+    
+    
+		<!-- Z -->
+		<div class="lettercontainer" id="z">
+        <div class="z-rectangle-1"></div>
+        <div class="z-rectangle-2"></div>
+			  <div class="z-angle line"></div>
+			  <div class="z-trapezoid-top trapezoid-top"></div>
+			  <div class="z-trapezoid-bottom trapezoid-bottom"></div>
+			  <div class="z-horizontal-top horizontal"></div>
+		    <div class="z-horizontal-bottom horizontal"></div>
+			  <div class="z-vertical-top line "></div>
+        <div class="z-vertical-bottom line "></div>
+		</div> 
+    
   </div>
+  
+</div>
   
 </body>
 </html>
