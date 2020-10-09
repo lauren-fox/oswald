@@ -1,6 +1,6 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  background-color: aliceblue;
+  background-color: white;
   cursor: none;
   height: 100vh;
 }
@@ -11,58 +11,103 @@ body {
 
 
 a{
-  color: mediumseagreen;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1rem;
+  color: #333333;
+  font-family: sans-serif;
+  font-size: 1.2rem;
   cursor: none;
   margin-left: 5vw;
   text-decoration: none;
-  letter-spacing: 0px;
 }
 
-a:hover{
-text-decoration: underline;
+#info:hover{
+  background-color: white;
 }
 
 
 #info{
-  margin-top: -2vh;
-  margin-left: 88vw;
-  position: absolute;
   position: fixed;
+  right: 15px;
+  background-color: white;
+  border: solid 1px #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  text-align: right;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+#info:hover{
+  border-radius: 0px;
+  transition: 0.25s;
 }
 
 #specimen{
-  margin-top: -2vh;
-  position: absolute;
-  margin-left: 5vw;
   position: fixed;
+  right: 153px;
+  background-color: white;
+  border: solid 1px #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  text-align: right;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+#specimen:hover{
+  border-radius: 0px;
+  transition: 0.25s;
 }
 
 p{
-  color: mediumseagreen;
+  color: black;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
 }
 
-#header{
-  position: relative;
-  display:flex;
-  width: 100vw;
-  text-align: left;
-  margin-left: 5vh;
+
+.footer-left{
+  z-index: 99;
+  margin-left: 5vw;
 }
 
+#header{
+  position: fixed;
+  left: -45px;
+  background-color: white;
+  border: solid 1px black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+#header:hover{
+  border-radius: 0px;
+  transition: 0.25s;
+}
+
+#header-container{
+  margin-top: -36px;
+}
 
 /* CLASSES FOR LETTER MODULES */
 
 .line{
   position: absolute;
-  border-left: 3px solid mediumseagreen;
+  border-left: 2px solid #333333;
   border-radius: 100px;
 }
 .trapezoid-top{
-  border-top: 20px solid mediumseagreen;
+  border-top: 20px solid #14ad2d;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -71,7 +116,7 @@ p{
 }
 .trapezoid-bottom{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -79,7 +124,7 @@ p{
 }
 .horizontal{
   position: absolute;
-  border-top: 3px solid mediumseagreen;
+  border-top: 2px solid #333333;
   border-radius: 100px;
 }
 
@@ -90,7 +135,7 @@ p{
   pointer-events: none;
   width: 25px;
   height:25px;
-  background-color: tomato;
+  background-color: #ff1038;
   border-radius: 100%;
   position: absolute;
   top:0;
@@ -230,7 +275,7 @@ p{
 
 .h-trapezoid-2{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -241,7 +286,7 @@ p{
 
 .h-trapezoid-3{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -295,22 +340,13 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
 
 /*-----A-----*/
 
-.a-rectangle-bottom-right{
-  position: absolute;
-  width: 60px;
-  height: 25px;
-  background-color:mediumseagreen;
-  top: 292px;
-  left: 158px;
-  transform: scale(0);
-}
 
 .a-circle-bottom-left{
   position: absolute;
@@ -318,9 +354,10 @@ p{
   left: -34px;
   width: 45px;
   height: 45px;
+  transform-origin: center;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .a-circle-2{
@@ -331,7 +368,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .a-circle-3{
@@ -342,7 +379,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ff1038;
 }
 
 .a-trapezoid-bottom-left{
@@ -390,7 +427,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .m-rectangle-left{
@@ -400,7 +437,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .m-rectangle-right{
   position: absolute;
@@ -409,7 +446,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .m-angle-right{
@@ -474,7 +511,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .b-circle-2{
@@ -485,7 +522,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 .b-rectangle{
@@ -495,7 +532,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .b-vertical-left{
@@ -507,13 +544,13 @@ p{
 .b-vertical-right-top{
   height: 130px;
   top: 30px;
-  left: 148px;
+  left: 150px;
 }
 
 .b-vertical-right-bottom{
   height: 133px;
   top: 176px;
-  left: 170px;
+  left: 175px;
 }
 
 .b-horizontal-top{
@@ -554,7 +591,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 .u-rectangle-left{
@@ -564,7 +601,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .u-rectangle-right{
@@ -574,7 +611,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .u-vertical-left{
@@ -676,7 +713,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
 }
 
 .r-circle-left-top{
@@ -687,7 +724,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .r-circle-right-bottom{
@@ -698,7 +735,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -712,7 +749,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
 }
 
 .g-vertical-left{
@@ -722,8 +759,8 @@ p{
 }
 
 .g-vertical-right-top{
-  height: 40px;
-  top: 21px;
+  height: 70px;
+  top: 19px;
   left: 152px;
 }
 
@@ -735,7 +772,7 @@ p{
 
 .g-horizontal-top{
   width: 122px;
-  top: 21px;
+  top: 20px;
   left: 25px;
 }
 
@@ -774,7 +811,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 /* Letter – E */
@@ -786,7 +823,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: black;
 }
 
 .e-circle-1{
@@ -797,7 +834,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .e-circle-2{
@@ -808,7 +845,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .e-vertical-left{
@@ -873,7 +910,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .f-rectangle{
@@ -883,7 +920,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .f-vertical-left{
@@ -893,7 +930,7 @@ p{
 }
 
 .f-vertical-right-top{
-  height: 40px;
+  height: 70px;
   top: 21px;
   left: 150px;
 }
@@ -937,7 +974,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-circle-1{
@@ -948,7 +985,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-circle-2{
@@ -959,7 +996,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-rectangle{
@@ -969,7 +1006,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .o-vertical-left{
@@ -1026,7 +1063,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .n-circle{
@@ -1037,7 +1074,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .n-vertical-left{
@@ -1087,7 +1124,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .s-circle-right-bottom-2{
@@ -1098,11 +1135,11 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .s-vertical-top-right{
-  height: 40px;
+  height: 70px;
   top: 21px;
   left: 142px;
 }
@@ -1166,7 +1203,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-2{
   position: absolute;
@@ -1176,7 +1213,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-3{
   position: absolute;
@@ -1186,7 +1223,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-4{
   position: absolute;
@@ -1196,7 +1233,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:black;
 }
 
 .c-trapezoid-top-left-2{
@@ -1219,7 +1256,7 @@ p{
 
 .c-vertical-right-bottom{
   height: 80px;
-  top: 240px;
+  top: 238px;
   left: 160px;
 }
 
@@ -1256,7 +1293,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
   transform: scale(0);
 }
 
@@ -1268,7 +1305,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .d-vertical-left{
@@ -1330,7 +1367,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-1{
   position: absolute;
@@ -1340,7 +1377,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-2{
   position: absolute;
@@ -1350,7 +1387,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-3{
   position: absolute;
@@ -1360,7 +1397,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-4{
   position: absolute;
@@ -1370,38 +1407,9 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
-.i-circle-5{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color: mediumseagreen;
-}
-.i-circle-6{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color: mediumseagreen;
-}
-.i-circle-7{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color: mediumseagreen;
-}
+
 
 .i-vertical-left{
   height: 250px;
@@ -1430,7 +1438,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .j-rectangle{
@@ -1440,7 +1448,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .j-vertical-left{  
@@ -1487,7 +1495,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -1499,7 +1507,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .k-trapezoid-bottom-left{
@@ -1552,7 +1560,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .l-circle-left{
@@ -1563,7 +1571,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .l-vertical-left{
@@ -1607,7 +1615,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -1620,7 +1628,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .p-circle{
@@ -1631,7 +1639,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .p-vertical-left{
@@ -1680,7 +1688,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:black;
 }
 .t-circle-1{
   position: absolute;
@@ -1690,7 +1698,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-2{
   position: absolute;
@@ -1700,7 +1708,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-3{
   position: absolute;
@@ -1710,7 +1718,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-4{
   position: absolute;
@@ -1720,7 +1728,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-5{
   position: absolute;
@@ -1730,7 +1738,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .t-vertical-left{
@@ -1876,7 +1884,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .v-circle{
@@ -1887,7 +1895,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .v-angle-left{
@@ -1929,7 +1937,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -1939,7 +1947,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -1949,7 +1957,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -2017,7 +2025,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -2109,7 +2117,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .y-circle-2{
@@ -2120,7 +2128,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .y-circle-3{
@@ -2131,7 +2139,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -2184,7 +2192,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .z-rectangle-2{
@@ -2194,30 +2202,5 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color:#ffcad5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
