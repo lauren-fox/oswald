@@ -1,41 +1,68 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
-  background-color: aliceblue;
+  background-color: white;
   cursor: none;
   height: 100vh;
 }
 
 h1 {
-  font-style: ;
-  color: mediumseagreen;
+  color: black;
   font-size: 1rem;
   font-family: 'IBM Plex Mono', monospace;
 }
 
 a{
-  color: mediumseagreen;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1rem;
+  color: #333333;
+  font-family: sans-serif;
+  font-size: 1.2rem;
   cursor: none;
   margin-left: 5vw;
   text-decoration: none;
 }
 
-a:hover{
-text-decoration: underline;
+#info:hover{
+  background-color: white;
 }
 
 
 #info{
-  margin-top: 94vh;
-  margin-left: 85vw;
   position: absolute;
+  right: 15px;
+  background-color: white;
+  border: solid 1px #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  text-align: right;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#info:hover{
+  border-radius: 0px;
+  transition: 0.25s;
 }
 
 #specimen{
-  margin-top: 94vh;
   position: absolute;
-  margin-left: 5vw;
+  right: 153px;
+  background-color: white;
+  border: solid 1px #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  text-align: right;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#specimen:hover{
+  border-radius: 0px;
+  transition: 0.25s;
 }
 
 p{
@@ -51,43 +78,53 @@ p{
 }
 
 #header{
-  position: relative;
-  display:flex;
-  width: 100vw;
-  text-align: left;
-  margin-left: 5vh;
+  position: absolute;
+  left: -45px;
+  background-color: white;
+  border: solid 1px black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:10px;
+  border-radius: 20px;
+}
+
+#header:hover{
+  border-radius: 0px;
+  transition: 0.25s;
 }
 
 
 
 
 #a{
-  margin-right: 360px;
-  margin-left: 170px;
+  margin-right: 260px;
+  margin-left: 50px;
 }
 
 #b{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 #c{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 #d{
-  margin-right: 380px;
+  margin-right: 280px;
 }
 #e{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #f{
-  margin-right: 360px;
+  margin-right: 180px;
 }
 #g{
-  margin-right: 360px;
+  margin-right: 230px;
 }
 #h{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #i{
   margin-right: -10px;
@@ -95,74 +132,74 @@ p{
 }
 
 #j{
-  margin-right: 360px;
+  margin-right: 260px;
   width: 50px;
 }
 
 #k{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #l{
-  margin-right: 360px;
+  margin-right: 260px;
   width: 100px;
   padding-left: 20px;
 }
 #m{
-  margin-right: 460px;
+  margin-right: 360px;
 }
 #n{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #o{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #p{
-  margin-right: 230px;
+  margin-right: 130px;
 }
 
 #q{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 #r{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #s{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #t{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #u{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #v{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #w{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 #x{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 #y{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 #z{
-  margin-right: 360px;
+  margin-right: 260px;
 }
 
 /* CLASSES FOR LETTER MODULES */
 
 .line{
   position: absolute;
-  border-left: 3.5px solid mediumseagreen;
+  border-left: 1.5px solid #333333;
   border-radius: 100px;
 }
 .trapezoid-top{
-  border-top: 20px solid mediumseagreen;
+  border-top: 20px solid #14ad2d;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -171,7 +208,7 @@ p{
 }
 .trapezoid-bottom{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -179,7 +216,7 @@ p{
 }
 .horizontal{
   position: absolute;
-  border-top: 3.5px solid mediumseagreen;
+  border-top: 1.5px solid #333333;
   border-radius: 100px;
 }
 
@@ -190,7 +227,7 @@ p{
   pointer-events: none;
   width: 25px;
   height:25px;
-  background-color: tomato;
+  background-color: #ff1038;
   border-radius: 100%;
   position: absolute;
   top:0;
@@ -222,8 +259,8 @@ p{
   width: 200px;
   height: 300px;
   padding-right: 400px;
-  margin-top: 25vh;
-  transform: scale(1.5);
+  margin-top: 43vh;
+  transform: scale(1.7);
   margin-right: 600px;
 }
 
@@ -249,7 +286,7 @@ p{
 
 .h-trapezoid-2{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -260,7 +297,7 @@ p{
 
 .h-trapezoid-3{
   position: absolute;
-  border-bottom: 20px solid mediumseagreen;
+  border-bottom: 20px solid #ffd62c;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -314,22 +351,13 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
 
 /*-----A-----*/
 
-.a-rectangle-bottom-right{
-  position: absolute;
-  width: 60px;
-  height: 25px;
-  background-color:mediumseagreen;
-  top: 292px;
-  left: 158px;
-  transform: scale(0);
-}
 
 .a-circle-bottom-left{
   position: absolute;
@@ -337,9 +365,10 @@ p{
   left: -34px;
   width: 45px;
   height: 45px;
+  transform-origin: center;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .a-circle-2{
@@ -350,7 +379,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .a-circle-3{
@@ -361,7 +390,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ff1038;
 }
 
 .a-trapezoid-bottom-left{
@@ -409,7 +438,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .m-rectangle-left{
@@ -419,7 +448,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .m-rectangle-right{
   position: absolute;
@@ -428,7 +457,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .m-angle-right{
@@ -493,7 +522,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .b-circle-2{
@@ -504,7 +533,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 .b-rectangle{
@@ -514,7 +543,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .b-vertical-left{
@@ -526,13 +555,13 @@ p{
 .b-vertical-right-top{
   height: 130px;
   top: 30px;
-  left: 148px;
+  left: 150px;
 }
 
 .b-vertical-right-bottom{
   height: 133px;
   top: 176px;
-  left: 170px;
+  left: 175px;
 }
 
 .b-horizontal-top{
@@ -573,7 +602,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 .u-rectangle-left{
@@ -583,7 +612,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .u-rectangle-right{
@@ -593,7 +622,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffd62c;
 }
 
 .u-vertical-left{
@@ -695,7 +724,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
 }
 
 .r-circle-left-top{
@@ -706,7 +735,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .r-circle-right-bottom{
@@ -717,7 +746,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -731,7 +760,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
 }
 
 .g-vertical-left{
@@ -741,8 +770,8 @@ p{
 }
 
 .g-vertical-right-top{
-  height: 40px;
-  top: 21px;
+  height: 70px;
+  top: 19px;
   left: 152px;
 }
 
@@ -754,7 +783,7 @@ p{
 
 .g-horizontal-top{
   width: 122px;
-  top: 21px;
+  top: 20px;
   left: 25px;
 }
 
@@ -793,7 +822,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
 }
 
 /* Letter – E */
@@ -805,7 +834,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color: mediumseagreen;
+  background-color: black;
 }
 
 .e-circle-1{
@@ -816,7 +845,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .e-circle-2{
@@ -827,7 +856,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .e-vertical-left{
@@ -892,7 +921,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .f-rectangle{
@@ -902,7 +931,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .f-vertical-left{
@@ -912,7 +941,7 @@ p{
 }
 
 .f-vertical-right-top{
-  height: 40px;
+  height: 70px;
   top: 21px;
   left: 150px;
 }
@@ -956,7 +985,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-circle-1{
@@ -967,7 +996,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-circle-2{
@@ -978,7 +1007,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .o-rectangle{
@@ -988,7 +1017,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .o-vertical-left{
@@ -1045,7 +1074,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .n-circle{
@@ -1056,7 +1085,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .n-vertical-left{
@@ -1106,7 +1135,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .s-circle-right-bottom-2{
@@ -1117,11 +1146,11 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .s-vertical-top-right{
-  height: 40px;
+  height: 70px;
   top: 21px;
   left: 142px;
 }
@@ -1185,7 +1214,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-2{
   position: absolute;
@@ -1195,7 +1224,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-3{
   position: absolute;
@@ -1205,7 +1234,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .c-circle-4{
   position: absolute;
@@ -1215,7 +1244,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:black;
 }
 
 .c-trapezoid-top-left-2{
@@ -1238,7 +1267,7 @@ p{
 
 .c-vertical-right-bottom{
   height: 80px;
-  top: 240px;
+  top: 238px;
   left: 160px;
 }
 
@@ -1275,7 +1304,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #14ad2d;
   transform: scale(0);
 }
 
@@ -1287,7 +1316,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .d-vertical-left{
@@ -1349,7 +1378,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-1{
   position: absolute;
@@ -1359,7 +1388,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-2{
   position: absolute;
@@ -1369,7 +1398,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-3{
   position: absolute;
@@ -1379,7 +1408,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 .i-circle-4{
   position: absolute;
@@ -1389,38 +1418,9 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
-.i-circle-5{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color:#1A60FB;
-}
-.i-circle-6{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color:mediumseagreen;
-}
-.i-circle-7{
-  position: absolute;
-  top: 270px;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  transform: scale(0);
-  background-color: mediumseagreen;
-}
+
 
 .i-vertical-left{
   height: 250px;
@@ -1449,7 +1449,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .j-rectangle{
@@ -1459,7 +1459,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .j-vertical-left{  
@@ -1506,7 +1506,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -1518,7 +1518,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .k-trapezoid-bottom-left{
@@ -1571,7 +1571,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .l-circle-left{
@@ -1582,7 +1582,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .l-vertical-left{
@@ -1626,7 +1626,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -1639,7 +1639,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .p-circle{
@@ -1650,7 +1650,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .p-vertical-left{
@@ -1699,7 +1699,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:black;
 }
 .t-circle-1{
   position: absolute;
@@ -1709,7 +1709,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-2{
   position: absolute;
@@ -1719,7 +1719,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-3{
   position: absolute;
@@ -1729,7 +1729,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-4{
   position: absolute;
@@ -1739,7 +1739,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 .t-circle-5{
   position: absolute;
@@ -1749,7 +1749,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#14ad2d;
 }
 
 .t-vertical-left{
@@ -1895,7 +1895,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .v-circle{
@@ -1906,7 +1906,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .v-angle-left{
@@ -1948,7 +1948,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -1958,7 +1958,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -1968,7 +1968,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -2036,7 +2036,7 @@ p{
   position: absolute;
   width: 60px;
   height: 25px;
-  background-color: mediumseagreen;
+  background-color: #ffcad5;
   transform: scale(0);
 }
 
@@ -2128,7 +2128,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .y-circle-2{
@@ -2139,7 +2139,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 .y-circle-3{
@@ -2150,7 +2150,7 @@ p{
   height: 45px;
   border-radius: 100%;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
 
 
@@ -2203,7 +2203,7 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffd62c;
 }
 
 .z-rectangle-2{
@@ -2213,5 +2213,5 @@ p{
   width: 60px;
   height: 25px;
   transform: scale(0);
-  background-color:mediumseagreen;
+  background-color:#ffcad5;
 }
