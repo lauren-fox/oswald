@@ -1,7 +1,8 @@
 $(document).ready(function() {
   
 $('body').jGravity({
-  target:'div'
+  target:'div',
+  ignoreClass: 'ignore'
 });
 
   
